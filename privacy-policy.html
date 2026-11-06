@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad — Pequeños Genios</title>
+    <style>
+        :root {
+            --sky-top: #B8E8FC;
+            --sky-light: #E0F4FF;
+            --sunny-cream: #FFFBEB;
+            --primary-blue: #1E88E5;
+            --dark-navy: #1A237E;
+            --body-dark: #263238;
+            --accent-purple: #6A1B9A;
+            --play-green: #2E7D32;
+            --star-gold: #FFC107;
+            --card-bg: #FFFFFF;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 24px 16px 48px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-light) 35%, var(--sunny-cream) 100%);
+            color: var(--body-dark);
+            line-height: 1.65;
+        }
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            background: var(--card-bg);
+            padding: 28px 24px;
+            border-radius: 24px;
+            border: 3px solid var(--star-gold);
+            box-shadow: 0 6px 18px rgba(26, 35, 126, 0.08);
+            margin-bottom: 24px;
+        }
+        h1 {
+            margin: 0 0 8px;
+            color: var(--dark-navy);
+            font-size: 2rem;
+            font-weight: 800;
+        }
+        .badge {
+            display: inline-block;
+            background: #FFF8E1;
+            color: var(--dark-navy);
+            border: 1.5px solid #FF8F00;
+            border-radius: 999px;
+            padding: 6px 16px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-top: 6px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 18px;
+            border: 2px solid rgba(30, 136, 229, 0.22);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        h2 {
+            margin-top: 0;
+            color: var(--accent-purple);
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        code {
+            background: #EEF6FF;
+            color: var(--dark-navy);
+            padding: 2px 6px;
+            border-radius: 6px;
+            font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.92em;
+        }
+        .highlight-box {
+            background: #E8F5E9;
+            border-left: 5px solid var(--play-green);
+            padding: 14px 18px;
+            border-radius: 10px;
+            margin: 12px 0;
+        }
+        .warning-box {
+            background: #FFF8E1;
+            border-left: 5px solid #FF8F00;
+            padding: 14px 18px;
+            border-radius: 10px;
+            margin: 12px 0;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--dark-navy);
+            margin-top: 28px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>🔒 Política de Privacidad</h1>
+        <div><strong>Aplicación:</strong> Pequeños Genios — Descubre los colores</div>
+        <div class="badge">Paquete: com.teamsd.pequenosgenios • Versión 1.0</div>
+    </header>
+
+    <section class="card">
+        <h2>1. Resumen para madres, padres, tutores y educadores</h2>
+        <p>
+            <strong>Pequeños Genios</strong> (identificador de paquete Android <code>com.teamsd.pequenosgenios</code>) es un videojuego educativo infantil diseñado para niñas y niños de <strong>4 a 7 años</strong>. Su objetivo es enseñar el reconocimiento de colores y figuras geométricas mediante rondas progresivas y estímulos positivos.
+        </p>
+        <div class="highlight-box">
+            <strong>Compromiso de privacidad infantil:</strong>
+            <ul>
+                <li><strong>Cero recopilación de datos personales:</strong> La aplicación no solicita nombre, edad, correo electrónico, número telefónico, dirección, fotos, contactos, grabación de micrófono ni ubicación geográfica.</li>
+                <li><strong>Sin conexión a Internet propia:</strong> La aplicación no declara el permiso <code>android.permission.INTERNET</code> en su manifiesto, por lo que no puede abrir conexiones de red hacia servidores propios ni de terceros.</li>
+                <li><strong>Sin publicidad ni compras:</strong> No contiene anuncios publicitarios, SDKs de rastreo o analítica, identificadores publicitarios (AAID) ni compras integradas (In-App Purchases).</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>2. Datos guardados localmente en el dispositivo</h2>
+        <p>
+            Para recordar el mejor resultado alcanzado por el jugador y su preferencia de sonido entre sesiones, la aplicación almacena exclusivamente tres datos técnicos no personales dentro del almacenamiento interno privado de Android (API <code>SharedPreferences</code> en modo privado <code>Context.MODE_PRIVATE</code>, archivo <code>pequenos_genios_local_prefs.xml</code>):
+        </p>
+        <ul>
+            <li><code>best_score</code> (número entero): El puntaje más alto logrado en una partida de 10 rondas (rango de 0 a 100 puntos).</li>
+            <li><code>best_stars</code> (número entero): El número máximo de estrellas obtenidas en una partida (rango de 0 a 10 estrellas).</li>
+            <li><code>sound_enabled</code> (valor booleano): Indica si el audio y las instrucciones habladas están activados (<code>true</code>) o silenciados (<code>false</code>).</li>
+        </ul>
+        <p>
+            <strong>Cómo eliminar estos datos:</strong> El adulto responsable puede borrar los valores locales desde <em>Ajustes de Android → Aplicaciones → Pequeños Genios → Almacenamiento → Borrar datos</em>, o desinstalando la aplicación. Una copia de seguridad existente puede conservarlos; consulte los controles de copia de seguridad del proveedor del dispositivo.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>3. Comportamiento del respaldo automático de Android (Auto Backup)</h2>
+        <p>
+            En el archivo <code>AndroidManifest.xml</code> de la aplicación se encuentra habilitada la función estándar de copia de seguridad del sistema operativo (<code>android:allowBackup="true"</code>), acotada de forma explícita mediante los archivos de configuración <code>backup_rules.xml</code> (para Android 11 e inferiores) y <code>data_extraction_rules.xml</code> (para Android 12 y superiores).
+        </p>
+        <ul>
+            <li><strong>Alcance del respaldo:</strong> Las reglas incluyen única y exclusivamente el archivo de preferencias locales <code>pequenos_genios_local_prefs.xml</code> (dominio <code>sharedpref</code>) tanto para copia de seguridad en la nube del sistema (<code>cloud-backup</code>) como para transferencia directa entre dispositivos (<code>device-transfer</code>).</li>
+            <li><strong>Control por parte del usuario:</strong> Si el adulto propietario del dispositivo tiene activada la copia de seguridad automática de Android (por ejemplo, asociada a su cuenta del sistema operativo) o transfiere sus aplicaciones a un dispositivo nuevo, el sistema Android puede conservar y restaurar automáticamente los tres valores antes descritos (<code>best_score</code>, <code>best_stars</code> y <code>sound_enabled</code>).</li>
+            <li><strong>Sin acceso del desarrollador:</strong> El respaldo lo gestiona Android o su proveedor, sujeto a su configuración y políticas de seguridad; el desarrollador de <em>Pequeños Genios</em> no recibe esas copias ni tiene acceso a ellas mediante la aplicación.</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>4. Funcionamiento del sonido y del motor TextToSpeech (Síntesis de voz)</h2>
+        <p>
+            El sistema de audio de <strong>Pequeños Genios</strong> se divide en dos componentes técnicos:
+        </p>
+        <ul>
+            <li>
+                <strong>Efectos musicales sintetizados localmente (<code>AudioTrack</code>):</strong>
+                Los sonidos de acierto, intento amable y fanfarria final se calculan mediante fórmulas matemáticas de onda sinusoidal en tiempo de ejecución usando la API nativa <code>android.media.AudioTrack</code>. No utilizan archivos externos ni servicios de red.
+            </li>
+            <li>
+                <strong>Instrucciones habladas en español (<code>android.speech.tts.TextToSpeech</code>):</strong>
+                Para facilitar la accesibilidad a niños de 4 a 7 años que aún están aprendiendo a leer, la aplicación solicita al motor de síntesis de voz de Android que pronuncie preguntas, pistas y felicitaciones del juego, incluidos los colores y el resultado en puntos y estrellas. La aplicación no solicita permiso de micrófono ni graba la voz del niño.
+            </li>
+        </ul>
+        <div class="warning-box">
+            <strong>Transparencia técnica sobre el motor TextToSpeech del sistema:</strong><br>
+            En Android 11 y versiones posteriores, <em>Pequeños Genios</em> declara únicamente la consulta de visibilidad de servicio <code>&lt;action android:name="android.intent.action.TTS_SERVICE" /&gt;</code> para comunicarse con el motor TTS preinstalado o configurado por el usuario en su dispositivo (por ejemplo, <em>Servicios de voz de Google / Speech Recognition &amp; Synthesis</em>, el motor TTS de Xiaomi/HyperOS, Samsung TTS u otro proveedor del sistema).<br><br>
+            Aunque <em>Pequeños Genios</em> no posee permiso de Internet ni solicita explícitamente síntesis por red, el motor TTS es una aplicación externa e independiente que cuenta con sus propios permisos. Según su configuración y las voces disponibles, puede procesar mediante servicios externos el texto que recibe del juego o descargar datos de voz.<br><br>
+            <strong>Cómo usar solo voz sin conexión o desactivar la voz:</strong>
+            <ul>
+                <li>Dentro del juego, puede pulsar en cualquier momento el botón superior <strong>"🔊 Sonido / 🔇 Silencio"</strong> para desactivar por completo las locuciones TTS y los efectos de sonido.</li>
+                <li>En los ajustes del teléfono (<em>Ajustes → Sistema o Ajustes adicionales → Idiomas y entradas → Salida de síntesis de voz / Text-to-speech</em>), el adulto puede instalar las voces en español para uso sin conexión de su motor TTS preferido.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>5. Permisos del dispositivo</h2>
+        <p>
+            La versión 1.0 de <strong>Pequeños Genios</strong> no solicita permisos de tiempo de ejecución ni permisos de red o almacenamiento compartido. El manifiesto incluye una consulta <code>&lt;queries&gt;</code> para descubrir el servicio de síntesis de voz (<code>android.intent.action.TTS_SERVICE</code>). Las bibliotecas AndroidX también incorporan al manifiesto final el permiso interno <code>com.teamsd.pequenosgenios.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>, protegido por firma, para receptores no exportados; no concede acceso a datos personales ni a Internet.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>6. Contacto del desarrollador y vigencia</h2>
+        <p>
+            <strong>Desarrollador / Proyecto:</strong> TeamSD — Pequeños Genios (<code>com.teamsd.pequenosgenios</code>).
+        </p>
+        <!--
+            IMPORTANTE ANTES DE PUBLICAR EN GITHUB PAGES:
+            Mantenga el correo de contacto actualizado y coherente con Google Play Console.
+        -->
+        <p>
+            <strong>Correo electrónico de contacto para consultas de privacidad:</strong>
+            <code>simonduranfrankdenis@gmail.com</code>
+            <em>(también disponible públicamente en la sección "Contacto del desarrollador" de la ficha oficial de Pequeños Genios en Google Play Store)</em>.
+        </p>
+        <p>
+            <strong>Última actualización de esta política:</strong> Noviembre de 2026. Cualquier cambio futuro en esta Política de Privacidad se publicará en esta misma página y dentro de la aplicación antes de su entrada en vigor.
+        </p>
+    </section>
+
+    <footer>
+        Pequeños Genios • Aplicación educativa infantil sin anuncios ni recopilación de datos personales
+    </footer>
+</div>
+</body>
+</html>
